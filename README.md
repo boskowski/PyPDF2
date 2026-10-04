@@ -1,4 +1,19 @@
-# PyPDF2
+# PyPDF2 (Legacy 1.26.0 Maintenance Fork)
+
+> [!NOTE]
+> This repository is a legacy compatibility fork of **PyPDF2 1.26.0**. It retains the classic 1.x API for projects unable to upgrade to `pypdf` 3.x+, while incorporating critical stability patches:
+> - **`PdfFileWriter` stream guard:** Prevents `AttributeError` when sweeping indirect references without a stream object.
+> - **Document permissions:** Backported support for inspecting and setting PDF document permission flags.
+>
+> For modern projects starting fresh, use upstream [`pypdf`](https://github.com/py-pdf/pypdf).
+
+### Installation
+
+```bash
+pip install git+https://github.com/boskowski/PyPDF2.git@v1.26.0.post1
+```
+
+---
 
 PyPDF2 is a pure-python PDF library capable of
 splitting, merging together, cropping, and transforming
